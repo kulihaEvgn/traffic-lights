@@ -1,0 +1,134 @@
+body {
+    background-color: antiquewhite;
+}
+:root{
+    --darkRed:rgba(255, 0, 0, 0.274);
+    --darkYallow:rgba(255, 255, 0, 0.308);
+    --darkGreen:rgba(0, 128, 0, 0.267);
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 800px;
+    margin: 0 auto;
+}
+.first_light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+    width: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(27, 27, 27);
+}
+.lan_b{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px dotted black;
+    transition: all 0.2s;
+    
+}
+.lan_b.red{
+    background-color: var(--darkRed);
+}
+.lan_b.yallow{
+    background-color: var(--darkYallow);
+}
+.lan_b.green{
+    background-color: var(--darkGreen);
+}
+.lan_b.red.active{
+    background-color: red;
+    box-shadow: -5px 7px 62px 5px rgb(255, 0, 0);
+    transition: all 0.2s;
+    
+}
+.lan_b.yallow.active{
+    background-color: yellow;
+    box-shadow: -5px 7px 62px 5px rgb(238, 255, 0);
+    transition: all 0.2s;
+}
+.lan_b.green.active{
+    background-color: rgb(9, 204, 9);
+    box-shadow: -5px 7px 62px 5px rgb(70, 247, 0);
+    transition: all 0.2s;
+
+}
+
+/* ++++++++++ */
+
+.second_ligt{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(27, 27, 27);
+}
+.lan_s{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px dotted black;
+    transition: all 0.2s;
+}
+.lan_s.red{
+    background-color: var(--darkRed)
+}
+.lan_s.yallow{
+    background-color: var(--darkYallow)
+}
+.lan_s.green{
+    background-color: var(--darkGreen)
+}
+.lan_s.red.active{
+    background-color: red;
+    box-shadow: -5px 7px 62px 5px rgb(255, 0, 0);
+    transition: all 0.2s;
+}
+.lan_s.yallow.active{
+    background-color: yellow;
+    box-shadow: -5px 7px 62px 5px rgb(238, 255, 0);
+    transition: all 0.2s;
+}
+.lan_s.green.active{
+    background-color: rgb(9, 204, 9);
+    box-shadow: -5px 7px 62px 5px rgb(70, 247, 0);
+    transition: all 0.2s;
+}
+
+/* +++++++++++++ */
+.palka{
+    height: 400px;
+    width: 20px;
+    background-color: black;
+    margin-left: 70px;
+}
+.two_palka{
+    height: 340px;
+    width: 10px;
+    background-color: black;
+    margin-left: 55px;
+}
+.btn {
+    padding: 5px;
+    margin-top: 30px;
+    background: rgb(3, 143, 3);
+    border-radius: 20%;
+    color: #fff;
+    text-transform: uppercase;
+}
+.btn[disabled]{
+    color: gray;
+}
